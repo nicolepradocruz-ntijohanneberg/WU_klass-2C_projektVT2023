@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar{
+    width: 50%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-flex;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;   
+}
+
+#subscribe_btn{
+    margin: 20px;
+    border-radius: 80px;
+    height: 70px;
+    width: 150px;
+    font-weight: 30px;
+}
+
+
+b{
+    color: #B6E388;
+    font-weight: 2000;
+}
+
+h1{
+    font-weight: 10;
+}
