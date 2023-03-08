@@ -2,30 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
+#grid_wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 500px 400px 400px 100px;
+    grid-template-areas: 
+    "he he he he"
+    "se1_2 se1_2 se2_2 se2_2 "
+    "ar ar ar ar"
+    "fo fo fo fo";
+}
 header{
+    grid-area: he;
     background-color: red;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    height: 80px;
 }
 
 .navbar{
     width: 50%;
-    margin: auto;
+    margin: 170px;
     padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
 }
 
 .navbar ul li{
     list-style: none;
     display: inline-flex;
-    margin: 0 20px;
+    margin: 20px;
     position: relative;
 }
 
@@ -35,13 +48,11 @@ header{
 }
 
 #subscribe_btn{
-    margin: 20px;
     border-radius: 80px;
     height: 70px;
     width: 150px;
     font-weight: 30px;
 }
-
 
 b{
     color: #B6E388;
@@ -50,4 +61,99 @@ b{
 
 h1{
     font-weight: 10;
+}
+
+h2{
+    font-size: 40px;
+    padding: 40px 0 ;
+}
+
+#introduction_page1{
+    background-color: #B6E388;
+    width: 600px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: se1_2;
+    height: 500px;
+}
+
+#page1{
+    display: flex;
+    flex-direction: row;
+}
+
+#intro_btn1{
+    background-color: blue;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+button{
+    border-radius: 80px;
+    height: 60px;
+    width: 250px;
+    margin: 10px;
+}
+
+#colored_btn{
+    background-color: #B6E388;
+    color: #fff;
+}
+
+#se2_2{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 660px;
+
+}
+
+.dish_btn{
+    width: 70px;
+    height: 25px;
+    font-size: x-small;
+}
+
+.intro_reviews{
+    background-color: red;
+    margin-top: 50px;
+    margin: 20px;
+}
+
+#slideshow_intro{
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    margin-top: 55px;
+}
+
+
+#prev_next_btn{
+    background-color: red;
+    height: 50px;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    font-size: x-small;
+}
+
+.stars_and_reviews{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;    
+}
+
+#prevBtn{
+    height: 50px;
+    width: 30px;
+    background-color: #B6E388;
 }
