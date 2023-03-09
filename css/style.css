@@ -5,19 +5,18 @@
 }
 
 #grid_wrapper{
-    display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 80px 500px 400px 400px 100px;
+    grid-template-rows: 80px 500px 500px 100px;
     grid-template-areas: 
     "he he he he"
-    "se1_2 se1_2 se2_2 se2_2 "
-    "ar ar ar ar"
+    "se1_1 se1_1 se1_2 se1_2"
+    "se1_3 se1_3 se se"
     "fo fo fo fo";
 }
 header{
     grid-area: he;
-    background-color: red;
+    background-color: #B6E388 ;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,7 +43,7 @@ header{
 
 .navbar ul li a{
     text-decoration: none;
-    color: #fff;   
+    color: #000;   
 }
 
 #subscribe_btn{
@@ -55,7 +54,7 @@ header{
 }
 
 b{
-    color: #B6E388;
+    color: green;
     font-weight: 2000;
 }
 
@@ -65,17 +64,21 @@ h1{
 
 h2{
     font-size: 40px;
-    padding: 40px 0 ;
+    padding-top: 40px;
+}
+
+h3{
+    font-size: 30px;
 }
 
 #introduction_page1{
-    background-color: #B6E388;
+    background-color: rgba(74, 169, 70, 0.637);
     width: 600px;
     padding: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    grid-area: se1_2;
+    grid-area: se1_1;
     height: 500px;
 }
 
@@ -95,8 +98,8 @@ h2{
 
 button{
     border-radius: 80px;
-    height: 60px;
-    width: 250px;
+    height: 50px;
+    width: 200px;
     margin: 10px;
 }
 
@@ -106,6 +109,7 @@ button{
 }
 
 #se2_2{
+    grid-template-areas: se1_2;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
@@ -144,6 +148,7 @@ button{
     display: flex;
     flex-direction: row;
     font-size: x-small;
+ 
 }
 
 .stars_and_reviews{
@@ -156,4 +161,163 @@ button{
     height: 50px;
     width: 30px;
     background-color: #B6E388;
+}
+
+
+#page2{
+    display: flex;
+    flex-direction: column;
+   
+}
+#se3_1{
+    grid-template-areas: se1_3;
+    
+}
+
+#grid_wrapper2{
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 500px 500px 100px;
+    grid-template-areas: 
+    "he he he he"
+    "se2_1 se2_1 se2_1 se2_1"
+    "se2_2 se2_2 se2_3 se2_3"
+    "fo fo fo fo";
+
+}
+
+#page1_order{
+    background-image: url('../img/order/delivery_pic2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    background-position:center;
+    grid-template-areas: se2_1;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#order_frontpage{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+#delivery_bar{
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    align-content: space-between;
+}
+
+#enter_delivery{
+    display: flex;
+}
+
+.green_btn{
+    background-color: #E1FFB1;
+    border-radius: 30px;
+    width: auto;
+    padding: 15px;
+    
+}
+
+#page2_order{
+    display: flex;
+    flex-direction: row;
+}
+
+#title_page2_order{
+    font-size: 30px;
+}
+
+#textarea_page2_order{
+    background-color: #E1FFB1;
+    width: 60%;
+    margin: 50px;
+    display: column;
+    grid-template-areas: se2_2;
+}
+
+#rubrik_medunderrubrik_page2_order{
+    margin-bottom: 25px;
+}
+
+.info_bar{
+    padding: 15px;
+    background-color: #E1FFB1;
+    width: 50%;
+}
+
+.info_bars{
+    display: flex;
+}
+
+#page2_order_pic{
+    width: 45%;
+    margin-top: 50px;
+}
+
+#page3_order{
+    background-image: url('../img/order/page3_order.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    grid-template-areas: se2_3;
+}
+
+#package_info{
+    background-color: #fff;
+    border: solid black;
+    width: 45%;
+    margin: 40px;
+    padding-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 540px;
+}
+
+#list_order{
+    width: 350px;
+}
+
+#prize_for_members_page3{
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+#title_starting_at{
+    border-bottom: solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#prize_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#page2_home_text{
+    width: 60%;
+    padding: 70px;
 }
