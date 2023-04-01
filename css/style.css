@@ -1,3 +1,5 @@
+@media screen and (min-width: 700px) {}
+
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +36,15 @@ header{
     height: 80px;
 }
 
+a {
+    font-family: Lato, sans-serif;
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin: 20px;
+}
+
 .navbar ul li{
     list-style: none;
     display: inline-flex;
@@ -68,7 +79,7 @@ h2{
 }
 
 h3{
-    font-size: 30px;
+    font-size: 23px;
 }
 
 #introduction_page1{
@@ -88,7 +99,6 @@ h3{
 }
 
 #intro_btn1{
-    background-color: blue;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -167,6 +177,8 @@ button{
 #page2{
     display: flex;
     flex-direction: column;
+    background-color: blue;
+    height: 5000px;
    
 }
 #se3_1{
@@ -181,7 +193,7 @@ button{
     grid-template-areas: 
     "he he he he"
     "se2_1 se2_1 se2_1 se2_1"
-    "se2_2 se2_2 se2_3 se2_3"
+    "se2_2 se2_2 se2_2 se2_2"
     "fo fo fo fo";
 
 }
@@ -265,6 +277,7 @@ button{
 #page2_order_pic{
     width: 45%;
     margin-top: 50px;
+    height: 450px;
 }
 
 #page3_order{
@@ -318,6 +331,46 @@ button{
 }
 
 #page2_home_text{
-    width: 60%;
-    padding: 70px;
+    width: 600px;
+    margin-left: 150px;
+    margin-top: 80px;
+    background-color: #B6E388;
+}
+
+#page2_home_text p {
+    font-size: larger;
+}
+
+
+#page2_home_text h3 {
+    padding: 10px;
+}
+
+#page2{
+    display: flex;
+    flex-direction: row;
+    grid-template-areas: sec2_2;
+}
+
+.step{
+    border-radius: 50px;
+    padding: 30px;
+    background-color: blue;
+    height: 800px;
+    align-content: flex-end;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    width: 340px;
+}
+
+#stair_img_home{
+    background-color: red;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
 }
