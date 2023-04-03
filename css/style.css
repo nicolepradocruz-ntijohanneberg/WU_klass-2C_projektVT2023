@@ -1,5 +1,3 @@
-@media screen and (min-width: 700px) {}
-
 *{
     margin: 0;
     padding: 0;
@@ -21,24 +19,25 @@ header{
     background-color: #B6E388 ;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 10px;
     height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: auto;
 }
 
 .navbar{
-    width: 50%;
-    margin: 170px;
-    padding: 35px 0;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    justify-content: center;
     height: 80px;
+    margin: 20px;
 }
 
 a {
     font-family: Lato, sans-serif;
-    color: #ecf0f1;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
@@ -46,22 +45,99 @@ a {
 }
 
 .navbar ul li{
-    list-style: none;
-    display: inline-flex;
-    margin: 20px;
+    display: flex;
+    flex-direction: row;
     position: relative;
+    margin: 10px;
 }
 
+a:hover {
+    background-color: #E1FFB1;
+}
+
+
+#navbar2{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -90vh;
+    margin-top: 15px;
+    right: 0px;
+    width: 200px;
+    align-items: center;
+    background-color: #B6E388;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.burger_line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.5s;
+
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    background-color: #B6E388;
+    font-family: sans-serif;
+}
+
+
+#line_2 {
+    opacity: 0;
+}
+
+#line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#line_3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.crossed_line #line_2 {
+    opacity: 0;
+}
+
+.crossed_line #line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.crossed_line #line_3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.nav-active {
+    transform: translateY(100vh);
+}
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: #B6E388;
+
 .navbar ul li a{
+    list-style: none;
     text-decoration: none;
     color: #000;   
+    margin: 20px;
 }
 
 #subscribe_btn{
     border-radius: 80px;
     height: 70px;
-    width: 150px;
     font-weight: 30px;
+    margin: none;
 }
 
 b{
@@ -70,12 +146,11 @@ b{
 }
 
 h1{
-    font-weight: 10;
+    font-weight: 10px;
 }
 
 h2{
     font-size: 40px;
-    padding-top: 40px;
 }
 
 h3{
@@ -120,7 +195,7 @@ button{
 
 #se2_2{
     grid-template-areas: se1_2;
-    background-color: aquamarine;
+    background-color: green;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,21 +213,23 @@ button{
 }
 
 .intro_reviews{
-    background-color: red;
     margin-top: 50px;
-    margin: 20px;
+    margin: 10px;
+    width: 190px;
+    border: solid black;
+    background-color: #fff;
+    padding: 2px;
+    height: 280px;
 }
 
 #slideshow_intro{
     display: flex;
-    background-color: blue;
     align-items: center;
     margin-top: 55px;
 }
 
 
 #prev_next_btn{
-    background-color: red;
     height: 50px;
     width: 450px;
     display: flex;
@@ -177,7 +254,6 @@ button{
 #page2{
     display: flex;
     flex-direction: column;
-    background-color: blue;
     height: 5000px;
    
 }
@@ -195,7 +271,6 @@ button{
     "se2_1 se2_1 se2_1 se2_1"
     "se2_2 se2_2 se2_2 se2_2"
     "fo fo fo fo";
-
 }
 
 #page1_order{
@@ -210,6 +285,7 @@ button{
     align-content: center;
     align-items: center;
     display: flex;
+    padding-top: 40px;
 }
 
 #order_frontpage{
@@ -297,16 +373,21 @@ button{
     border: solid black;
     width: 45%;
     margin: 40px;
-    padding-top: -20px;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     height: 540px;
+    padding-top: 40px;
+    list-style: none;
 }
 
 #list_order{
     width: 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #prize_for_members_page3{
@@ -374,3 +455,87 @@ button{
     flex-direction: column;
     margin-left: 150px;
 }
+
+#reviews_page1{
+    background-image: url('../img/reviews/reviews_page1.jpg');
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    flex-wrap: wrap;
+}
+
+#title_page1_reviews{
+    text-align: center;
+    font-size: 40px;
+    width: 500px;
+    
+}
+
+#title_page1_reviews h2{
+    font-size: 80px;
+    color: #fff;
+}
+
+.dishes2{
+    background-color: #B6E388;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#reviews_page2{
+    background-color:#B6E388;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.standout_h2{
+    color: #fff;
+    text-decoration: underline; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#popular_dishes{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrap_title{
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.wrap_title h2{
+    font-size: 50px;
+    text-decoration:;
+
+}
+
+
+#grid_wrapper3{
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 500px 500px 100px;
+    grid-template-areas: 
+    "he he he he"
+    "se1_1 se1_1 se1_2 se1_2"
+    "se1_3 se1_3 se se"
+    "fo fo fo fo";
+}
+
